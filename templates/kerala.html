@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>places to visit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+ <!-- navbar starts -->
+ <nav class="navbar navbar-expand-lg navbar-light bg-info">
+  <div class="container">
+      <a class="navbar-brand" >
+          <img src="data:image/png;base64,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" alt="" width="90" height="80">
+        </a>
+    <a class="navbar-brand ">kerala</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex justify-content-end">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Places to visit</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="login.html">Log in</a>
+          </li>
+
+        
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+<!-- navbar ends -->
+      <!-- landing page starts-->
+   <div class="container-ekm">
+    <div class="row" >
+        <div class="col">
+            <img class="kerala img-fluid" src="https://i.pinimg.com/originals/0f/ba/9b/0fba9bef8d631d81f7b044aa66fda18e.png" alt="kerala map"width="800" height="1000">
+        </div>
+        <div class="col">
+            <h3 class="kerala d-flex justify-content-center">kerala</h3>
+            <p>Kerala, a state situated on the tropical Malabar Coast of southwestern India, is one of the most popular tourist destinations in the country. Named as one of the ten paradises of the world by National Geographic Traveler, Kerala is famous especially for its ecotourism initiatives and beautiful backwaters. Its unique culture and traditions, coupled with its varied demography, have made Kerala one of the most popular tourist destinations in the world. Growing at a rate of 13.31%, the tourism industry is a major contributor to the state's economy</p>
+            <p>Until the early 1980s, Kerala was a relatively unknown destination, with most tourism circuits concentrated around the north of the country. Aggressive marketing campaigns launched by the Kerala Tourism Development Corporation—the government agency that oversees tourism prospects of the state—laid the foundation for the growth of the tourism industry. In the decades that followed, Kerala Tourism was able to transform itself into one of the niche holiday destinations in India. The tag line Kerala – God's Own Country was adopted in its tourism promotions and became a global superbrand. Kerala is regarded as one of the destinations with the highest brand recall. In 2010, Kerala attracted 660,000 foreign tourist arrivals.</p>
+            <p>Kerala is a popular destination for both domestic as well as foreign tourists. Kerala is well known for its beaches, backwaters in Alappuzha and Kollam, mountain ranges and wildlife sanctuaries. Other popular attractions in the state include the beaches at Kovalam, Muzhappilangad, Bekal and Kappad; backwater tourism and lake resorts around Ashtamudi Lake, Kollam; hill stations and resorts at Munnar, Wayanad, Nelliampathi, Vagamon and Ponmudi; and national parks and wildlife sanctuaries at Wayanad, Periyar, Parambikulam, Silent Valley National Park and Eravikulam National Park. The "backwaters" region—an extensive network of interlocking rivers, lakes, and canals that centre on Vembanad Lake, also see heavy tourist traffic. Heritage sites, such as the Padmanabhapuram Palace, Hill Palace, and Mattancherry Palace, are also visited. To further promote tourism in Kerala, the Grand Kerala Shopping Festival was started by the Government of Kerala in 2007. Since then it has been held every year during the December–January period.</p>
+        </div>
+    </div>
+   </div>
+    <!-- landing page ends -->
+<!-- main attractions starts -->
+<div class="row ">
+  <div class="col-6">
+      <div class="card border-primary mb-4">
+          <div class="card-body text-primary">
+              <h5 class="card-title">Thiruvananthapuram</h5>
+             
+              <a href="tvm.html">Learn more</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+      <div class="card border-secondary mb-4">
+          <div class="card-body text-secondary">
+              <h5 class="card-title">Kollam</h5>
+              
+              <a href="kollam.html">Learn more</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+      <div class="card border-success mb-4">
+          <div class="card-body text-success">
+              <h5 class="card-title">Pathanamthitta</h5>
+             
+              <a href="#" class="link">Learn more</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+      <div class="card border-danger mb-4">
+          <div class="card-body text-danger">
+              <h5 class="card-title">Alappuzha</h5>
+              
+              <a href="alappuzha.html">Learn more</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+      <div class="card border-warning mb-4">
+          <div class="card-body text-warning">
+              <h5 class="card-title">Kottayam</h5>
+              
+              <a href="#" class="link">Learn more</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+    <div class="card border-dark mb-4">
+        <div class="card-body text-dark">
+            <h5 class="card-title">Idukki</h5>
+            
+            <a href="#" class="link">Learn more</a>
+        </div>
+    </div>
+</div>
+  <div class="col-6">
+      <div class="card border-info mb-4">
+          <div class="card-body text-info">
+              <h5 class="card-title">Ernakulam</h5>
+              
+              <a href="ekm.html">Learn more</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+      <div class="card border-dark mb-4">
+          <div class="card-body text-dark">
+              <h5 class="card-title">Thrissur</h5>
+              
+              <a href="#" class="link">Learn more</a>
+          </div>
+      </div>
+  </div>
+  
+</div>
+<div class="row">
+  <div class="col-6">
+      <div class="card border-primary mb-4">
+          <div class="card-body text-primary">
+              <h5 class="card-title">Palakkad</h5>
+              
+              <a href="#" class="link">Learn more</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+      <div class="card border-secondary mb-4">
+          <div class="card-body text-secondary">
+              <h5 class="card-title">Malappuram</h5>
+              
+              <a href="#"class="link">Learn more</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+      <div class="card border-success mb-4">
+          <div class="card-body text-success">
+              <h5 class="card-title">Kozhikkode</h5>
+              
+              <a href="#" class="link">Learn more</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+      <div class="card border-danger mb-4">
+          <div class="card-body text-danger">
+              <h5 class="card-title">Wayanad </h5>
+              
+              <a href="wayanad.html">Learn more</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+      <div class="card border-warning mb-4">
+          <div class="card-body text-warning">
+              <h5 class="card-title">Kannur</h5>
+             
+              <a href="#" class="link">Learn more</a>
+          </div>
+      </div>
+  </div>
+  <div class="col-6">
+      <div class="card border-info mb-4">
+          <div class="card-body text-info">
+              <h5 class="card-title">Kasaragod</h5>
+              
+              <a href="#" class="link">Learn more</a>
+          </div>
+      </div>
+  </div>
+ 
+  
+</div> 
+<!-- main attractions ends -->
+<!-- footer starts --> 
+<div class="footer-basic mt-5 bg-dark">
+  <footer >
+      <ul class="list-inline">
+          <li class="list-inline-item"><a href="index.html">Home</a></li>
+          
+          <li class="list-inline-item"><a href="#">About</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+      </ul>
+      <p class="copyright">kerala tourism © 2022</p>
+  </footer>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+<!-- footer end -->
+
+    
+   
+</body>
+</html>
